@@ -1,0 +1,137 @@
+.__footer-map{
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../../../assets/images/map.png");
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 2/1;
+    width: 100%;
+}
+
+.__footer-map__box{
+    background: var(--white-color);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 46%;
+    position: absolute;
+    left: 26%;
+    top: 12%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.__footer-map__box .logo{
+    margin-right: 1vw;
+}
+
+.__footer-map__box p{
+    color: var(--primary-color);
+    opacity: 80%;
+    font-size: 1.5vw;
+    font-family: "Gilroy-Regular", sans-serif;
+    animation: slideInFromRight 1.5s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.__footer-map__box .smile{
+    margin-left: 1vw;
+}
+
+.__footer-map__box .dot{
+    background: var(--white-color);
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 89%;
+}
+
+.__footer-map__box .pointer{
+    position: absolute;
+    width: 4%;
+    top: 110%;
+}
+
+.__footer-map__info{
+    padding-top: 26%;
+}
+
+.__footer-map__info p{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.__footer-map__info a{
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: var(--white-color);
+    display: block;
+    text-align: center;
+}
+
+.__footer-map__info hr{
+    width: 12%;
+    margin: 20px auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .__footer-map__box{
+        left: 25%;
+        top: 19%;
+    }
+
+    .__footer-map__box .logo{
+        width: 15px;
+    }
+
+    .__footer-map__box .smile{
+        width: 15px;
+    }
+
+    .__footer-map__info img{
+        width: 170px;
+    }
+
+    .__footer-map__info p{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .__footer-map__box{
+        top: 14%;
+    }
+
+    .__footer-map__box .logo{
+        width: 30px;
+    }
+
+    .__footer-map__info img{
+        width: 230px;
+    }
+
+    .__footer-map__info p{
+        font-size: 18px;
+    }
+}

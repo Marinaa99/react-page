@@ -1,42 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+    --primary-color: #283e51;
+    --accent-color: #17ac9d;
+    --secondary-color: #67859e;
+    --white-color: #ffffff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("./assets/fonts/Gilroy-Bold.woff");
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("./assets/fonts/Gilroy-Bold.woff");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("./assets/fonts/Gilroy-Regular.woff");
 }
 
-.card {
-  padding: 2em;
+@font-face {
+    font-family: "Butler-Light";
+    src: url("./assets/fonts/Butler_Light.woff");
 }
 
-.read-the-docs {
-  color: #888;
+@font-face {
+    font-family: "Butler-Regular";
+    src: url("./assets/fonts/Butler_Regular.woff");
+}
+
+@font-face {
+    font-family: "Rockness";
+    src: url("./assets/fonts/Rockness.woff");
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
