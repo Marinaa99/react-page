@@ -1,0 +1,35 @@
+.__titles{
+  text-align: center;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.__titles h2{
+  font-size: 46px;
+  line-height: 90px;
+  font-weight: 400;
+  font-family: "Gilroy-Bold", sans-serif;
+  color: var(--primary-color);
+}
+
+.__titles span{
+  font-size: 65px;
+  line-height: 90px;
+  font-family: "Rockness", sans-serif;
+  color: var(--accent-color);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 88%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .__titles h2{
+    font-size: 40px;
+  }
+
+  .__titles span{
+    font-size: 51px;
+  }
+}

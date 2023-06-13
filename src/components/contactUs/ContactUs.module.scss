@@ -1,4 +1,4 @@
-.__contact-us{
+.contact-us{
     background: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     padding: 20px 0 30px 0;
 }
 
-.__contact-us__title{
+.contact-us__title{
     font-size: 72px;
     font-family: "Butler-Light", sans-serif;
     color: var(--white-color);
@@ -18,7 +18,7 @@
     z-index: 1;
 }
 
-.__contact-us span{
+.contact-us span{
     font-size: 22px;
     font-family: "Gilroy-Regular", sans-serif;
     color: var(--white-color);
@@ -28,7 +28,7 @@
     z-index: 1;
 }
 
-.__contact-us button{
+.contact-us button{
     font-size: 36px;
     font-family: "Gilroy-Bold", sans-serif;
     color: var(--white-color);
@@ -42,11 +42,11 @@
     align-items: center;
     z-index: 1;
 }
-.__contact-us button:hover{
+.contact-us button:hover{
     background: var(--accent-color);
 }
 
-.__contact-us img{
+.contact-us img{
     position: absolute;
     width: 520px;
     bottom: -91px;
@@ -55,23 +55,23 @@
 }
 
 @media screen and (max-width: 768px) {
-    .__contact-us__title {
+    .contact-us__title {
         font-size: 40px;
         z-index: 1;
     }
 
-    .__contact-us button {
+    .contact-us button {
         z-index:1;
         font-size: 13px;
         line-height: 20px;
     }
 
-    .__contact-us span {
+    .contact-us span {
         z-index: 1;
         font-size: 13px;
     }
 
-    .__contact-us img{
+    .contact-us img{
         z-index: 0;
         width: 170px;
         right: 0;
@@ -80,23 +80,23 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .__contact-us__title {
+    .contact-us__title {
         font-size: 60px;
         z-index: 1;
     }
 
-    .__contact-us span {
+    .contact-us span {
         z-index: 1;
         font-size: 18px;
     }
 
-    .__contact-us button {
+    .contact-us button {
         z-index:1;
         font-size: 20px;
         line-height: 60px;
     }
 
-    .__contact-us img{
+    .contact-us img{
         z-index: 0;
         width: 300px;
         bottom: -52px;

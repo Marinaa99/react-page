@@ -1,10 +1,13 @@
 import React from "react";
-import "../Title.css";
+import "./SectionsTitle.scss";
 
-const SectionsTitle = ({title, className}) => {
+const SectionsTitle = ({   title = "",
+                           color = "",
+                           className = ""}) => {
+
     return(
         <>
-            <h3 className={className}>{title}</h3>
+            <h3 className={`__section-title ${className} ${color}`}>{title}</h3>
         </>
     )
 }

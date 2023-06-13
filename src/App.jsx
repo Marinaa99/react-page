@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Footer from "./components/footer/Footer.jsx";
 import PageTitle from "./components/title/pageTitle/PageTitle.jsx";
 import Introduction from "./components/introduction/Introduction.jsx";
@@ -13,39 +13,19 @@ function App() {
 
   return (
       <>
-          <header className="header">
-              {/*  Navigation  */}
+
           <Navigation/>
-          </header>
 
-
-          <section>
-          {/*  PageTitle  */}
-          <PageTitle/>
-          {/*  Introduction  */}
           <Introduction/>
-          </section>
 
-          <section>
-          {/*  Products  */}
-              <ProductsTitle/>
-              <Products/>
-          </section>
+          <Products/>
 
-          <section>
-              {/*  ContactUs  */}
-             <ContactUs/>
-          </section>
+          <ContactUs/>
 
-          <section>
-              {/*  InterestingTopics  */}
-              <InterestingTopics/>
-          </section>
+          <InterestingTopics/>
 
-          <footer>
-          {/*  Footer  */}
           <Footer/>
-          </footer>
+
 
       </>
   )

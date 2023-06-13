@@ -1,0 +1,27 @@
+.page-title{
+  font-size: 100px;
+  font-family: "Butler-Light", sans-serif;
+  line-height: 100px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 10%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .page-title{
+    font-size: 45px;
+    line-height: 70px;
+    margin-top: 25%;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .page-title{
+    font-size: 62px;
+  }
+}

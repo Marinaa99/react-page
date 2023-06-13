@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import "./Navigation.css";
+import "./Navigation.scss";
 import logo from "../../assets/images/logo.png"
 
 const Navigation = () => {
@@ -43,7 +43,7 @@ const Navigation = () => {
         { text: 'Blog', url: '#' },
     ]
     return (
-
+        <header className="header">
         <div className="__header" id="header">
           <img className="__header__logo" src={logo} alt="Logo"/>
             <nav className={`__nav ${isMenuOpen ? 'active' : ''}`}>
@@ -69,7 +69,7 @@ const Navigation = () => {
                 <div className={`__menu-button__line ${isMenuOpen ? "active" : ""}`}></div>
             </div>
         </div>
-
+        </header>
     )
 }
 

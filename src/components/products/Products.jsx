@@ -1,7 +1,8 @@
 import React from "react";
-import "./Products.css";
+import classes from "./Products.module.css";
 import computer from "../../assets/images/computer.png"
 import shift from "../../assets/images/shift.png"
+import ProductsTitle from "../title/productsTitle/ProductsTitle.jsx";
 
 const Products = () => {
     const products = [
@@ -17,16 +18,20 @@ const Products = () => {
         }
     ]
     return(
-        <div className="__products">
+        <>
+        <ProductsTitle/>
+        <div className={classes["products"]}>
             {products.map((element, index) => (
-                <div key={index} className="__products__bg">
+                <div key={index} className={classes["products__bg"]}>
                     <h3>{element.title}</h3>
                     <p>{element.description}</p>
                     <img src={element.src} alt={element.title} />
                 </div>
             ))}
         </div>
+        </>
     )
+
 }
 
 export default Products;

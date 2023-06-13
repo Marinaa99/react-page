@@ -1,21 +1,21 @@
 import React from "react";
-import "./ContactInformation.css";
+import classes from "./ContactInformation.module.scss";
 import logo from "../../../assets/images/logo.png";
 import angel from "../../../assets/images/angel.png";
 import pointer from "../../../assets/images/pointer.png";
 import amplitudo from "../../../assets/images/amplitudo.png";
 const ContactInformation = () => {
     return(
-        <div className="__footer-map">
-            <div className="__footer-map__box">
-            <img className="logo" src={logo} alt="Amplitudo Logo"/>
+        <div className={classes["footer-map"]}>
+            <div className={classes["footer-map__box"]}>
+            <img className={classes["logo"]} src={logo} alt="Amplitudo Logo"/>
             <p>Hello from the center of the world!</p>
-            <img className="smile" src={angel} alt="Smile Icon"/>
-            <div className="dot"></div>
-            <img className="pointer" src={pointer} alt="Pointer"/>
+            <img className={classes["smile"]} src={angel} alt="Smile Icon"/>
+            <div className={classes["dot"]}></div>
+            <img className={classes["pointer"]} src={pointer} alt="Pointer"/>
             </div>
 
-            <div className="__footer-map__info">
+            <div className={classes["footer-map__info"]}>
                 <img src={amplitudo} alt="Amplitudo Logo"/>
                 <p>Boulevard of St. Petar Cetinjski 56</p>
                 <p>Podgorica, Montenegro</p>
